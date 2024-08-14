@@ -1,0 +1,20 @@
+export default () => ({
+    port: +process.env.PORT || 5004,
+    dbType: process.env.DB_TYPE,
+    dbHost: process.env.DB_HOST,
+    dbPort: +process.env.DB_PORT,
+    dbName: process.env.DB_NAME,
+    dbUsername: process.env.DB_USERNAME,
+    dbPassword: process.env.DB_PASSWORD,
+    redisHost: process.env.REDIS_HOST,
+    redisPort: +process.env.REDIS_PORT,
+    redisPassword: process.env.REDIS_PASSWORD,
+    rabbitmqUrl: process.env.RABBITMQ_URL,
+    emailNotificationQueue: process.env.EMAIL_NOTIFICATION_QUEUE,
+    pushNotificationQueue: process.env.PUSH_NOTIFICATION_QUEUE,
+    notificationQueue: process.env.NOTIFICATION_QUEUE,
+    publicKeyPath: process.env.PUBLIC_KEY_PATH,
+    secretKey: process.env.SECRET_KEY,
+    superAdminEmail: process.env.SUPER_ADMIN_EMAIL,
+    superAdminPassword: process.env.SUPER_ADMIN_PASSWORD
+});
